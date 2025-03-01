@@ -6,3 +6,33 @@ body {
   font-family: Arial;
   text-align: center;
 }
+
+/* Navbar Styling */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #333;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
