@@ -3,8 +3,15 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Layout() {
-  return <h1>LAYOUT</h1>;
+function Layout({ children }) {
+  return (
+    <>
+      <Navbar />
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
 }
 
 export default Layout;

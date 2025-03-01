@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar";
+import Layout from "./Layout";
 import Home from "./Home";
 import About from "./About";
 import Classes from "./Classes";
@@ -8,12 +8,10 @@ import Testimonials from "./Testimonials";
 import Gallery from "./Gallery";
 import FAQ from "./FAQ";
 import Contact from "./Contact";
-import Footer from "./Footer";
 
 const App = () => {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
@@ -23,8 +21,8 @@ const App = () => {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
-    </>
+    </Layout>
   );
 };
+
 export default App;
